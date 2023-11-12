@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "configs",
+  "info": {
+    "singularName": "config",
+    "pluralName": "configs",
+    "displayName": "config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "upwork_url": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "meta_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "meta_description": {
+      "type": "string",
+      "maxLength": 155,
+      "required": true
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "navbar_cta_text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
